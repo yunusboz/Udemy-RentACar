@@ -17,8 +17,8 @@ public class ModelConfiguration : IEntityTypeConfiguration<Model>
         builder.Property(m => m.TransmissionId).HasColumnName("TransmissionId").IsRequired();
         builder.Property(m => m.DailyPrice).HasColumnName("DailyPrice").IsRequired();
         builder.Property(m => m.ImageUrl).HasColumnName("ImageUrl").IsRequired();
-
         builder.Property(m => m.CreatedDate).HasColumnName("CreatedDate").IsRequired();
+
         builder.Property(m => m.UpdatedDate).HasColumnName("UpdatedDate");
         builder.Property(m => m.DeletedDate).HasColumnName("DeletedDate");
 
